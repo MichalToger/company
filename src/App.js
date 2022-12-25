@@ -1,23 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Company from './Company';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Company CompanyName = "Teva" NumberOfEmployees = "3000" Adress = "Haifa"/>
+    <Company CompanyName = "AVX" NumberOfEmployees = "150"   Adress =  "Jerusalem" />
+    <Company CompanyName = "Intel" NumberOfEmployees = "10000" Adress = "Tel Aviv" />
     </div>
   );
 }
